@@ -28,3 +28,22 @@ const myfunction=function () {
     console.log("Hello World");
 }
 myfunction();
+
+// ***************** Memory *****************
+// stack(Primitive) , Heap(Non-Primitive)
+let myYoutube = "Arjun.youtube.com";
+
+let anothername=myYoutube
+ 
+anothername="nayakTheBoss";
+console.log(myYoutube);
+console.log(anothername);
+
+let userOne={
+    email: "user@google.com",
+    upi:"user@ybl"
+}
+let userTwo=userOne
+userTwo.email="arjun@google.com"
+console.log(userOne.email);
+console.log(userTwo.email);
