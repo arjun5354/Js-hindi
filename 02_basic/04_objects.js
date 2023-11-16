@@ -22,7 +22,7 @@ const obj2={3:"c",4:"d"}
 
 // const obj3={obj1,obj2}
 
-// const obj3=Object.assign({},obj1,obj2)
+// const obj3=Object.assign({},obj1,obj2) // (Target , source)
 
 const obj3={...obj1,...obj2}
 console.log(obj3);
@@ -42,3 +42,38 @@ console.log(Object.values(tinderuser));
 console.log(Object.entries(tinderuser));
 
 console.log(tinderuser.hasOwnProperty("isLoggedin"));
+
+const course={
+    coursename:"js in hindi",
+    price:"999",
+    courseInstructor:"Hitesh"
+}
+// *************** Object destructure ************************
+console.log();
+// course.courseInstructor
+// const {courseInstructor}=course
+// console.log(courseInstructor);
+const {courseInstructor:instructor}=course
+console.log(instructor);
+
+const navbar=({company})=>{  // props.company->{company} [destructuring]
+
+}
+navbar(company="hitesh")
+
+// Api->upne kam dusro se karwa lene ko bolte hai api
+// Backend se kuch value ate hai un value ko app kaise likhte hai (old->xml structure || new->json structure)
+
+// API
+
+// {
+//     "name":"Arjun",
+//     "coursename":'js in hindi',
+//     "price":"free"
+// }
+
+[
+{},
+{},
+{},
+]
